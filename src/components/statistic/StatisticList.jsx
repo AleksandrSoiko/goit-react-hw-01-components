@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-
-export const Statistic = () => {
-    return (
-        
-    )
+import { StatisticItem } from './StatisticItem';
+export const StatisticList = ({ id }) => {
+  return <StatisticItem></StatisticItem>;
 };

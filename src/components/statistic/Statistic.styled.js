@@ -13,6 +13,7 @@ export const StatList = styled.ul`
 `;
 
 export const Title = styled.h2`
+  display: block;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
