@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { ItemWpapper } from './StatisticItem';
 import { Section, StatList, Title, Item } from './Statistic.styled';
 
