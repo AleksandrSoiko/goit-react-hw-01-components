@@ -1,6 +1,6 @@
 import { Profile } from './Profile/Profile';
 import { Layout } from './Layout/Layout';
-import { StatBlock } from './Statistic/StatisticList';
+import { StatBlock } from '../components/Statistic/StatisticList';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionList } from './Transaction/TransactionList';
 import user from '../data/user.json';
