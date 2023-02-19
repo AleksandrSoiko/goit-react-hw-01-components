@@ -1,6 +1,6 @@
-// import PropTypes from 'prop-types';
 import { ItemWpapper } from './StatisticItem';
 import { Section, StatList, Title, Item } from './Statistic.styled';
+import color from './randomColor';
 
 export const StatBlock = ({ items, title }) => {
   return (
@@ -10,10 +10,7 @@ export const StatBlock = ({ items, title }) => {
       <StatList>
         {items.map(item => {
           return (
-            <Item
-              key={item.id}
-              style={{ backgroundColor: getRandomHexColor() }}
-            >
+            <Item key={item.id} style={{ backgroundColor: color() }}>
               <ItemWpapper item={item} />
             </Item>
           );
@@ -22,7 +19,3 @@ export const StatBlock = ({ items, title }) => {
     </Section>
   );
 };
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
