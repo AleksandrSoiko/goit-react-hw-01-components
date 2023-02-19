@@ -1,11 +1,18 @@
 import PropTypes from 'prop-types';
-import { Section, StatList, Title } from './Statistic.styled';
+import { ItemContainer, Label, Value } from './Statistic.styled';
 
-export const StatisticItem = () => {
+export const ItemWpapper = ({ item }) => {
   return (
-    <Section>
-      <Title></Title>
-      <StatList></StatList>
-    </Section>
+    <ItemContainer>
+      <Label>{item.label}</Label>
+      <Value>{item.percentage}</Value>
+    </ItemContainer>
   );
+};
+
+ItemWpapper.propTypes = {
+  item: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired,
 };

@@ -1,42 +1,47 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  width: 400px;
-  padding: 20px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid black;
+  background-color: lightgrey;
 `;
 
 export const StatList = styled.ul`
+  width: 100%;
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
 `;
-
+export const ItemContainer = styled.div`
+  width: 100%;
+`;
 export const Title = styled.h2`
   display: block;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
 `;
-/*
-  <h2 class="title">Upload stats</h2>
 
-  
-    <li class="item">
-      <span class="label">.docx</span>
-      <span class="percentage">4%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp3</span>
-      <span class="percentage">14%</span>
-    </li>
-    <li class="item">
-      <span class="label">.pdf</span>
-      <span class="percentage">41%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp4</span>
-      <span class="percentage">12%</span>
-    </li>
-  
-*/
+export const Item = styled.li`
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Label = styled.span`
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  display: block;
+`;
+export const Value = styled.span`
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+`;

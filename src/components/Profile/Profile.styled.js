@@ -6,6 +6,7 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   border: 1px solid grey;
 `;
 
@@ -38,7 +39,8 @@ export const Tag = styled.p`
 export const Location = styled.p`
   font-size: 14px;
   font-weight: 400;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
   color: grey;
 `;
 
@@ -52,13 +54,18 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
+  padding: 5px;
   text-align: center;
   flex-direction: column;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
   width: 100%;
   gap: 5px;
+  background: lightgrey;
 
-  border: 1px solid grey;
+  border: 1px solid black;
 `;
 
 export const StatText = styled.span`
@@ -67,6 +74,7 @@ export const StatText = styled.span`
 `;
 export const StatValue = styled.span`
   font-size: 16px;
+  font-weight: 600;
   color: black;
 `;
 /* 
